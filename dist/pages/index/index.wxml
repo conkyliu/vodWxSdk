@@ -1,0 +1,9 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index">
+        <button bindtap="onSelect">选择视频</button>
+        <block wx:if="{{selectedVideos.length}}">
+            <video src="{{anonymousState__temp}}"></video>
+        </block>
+        <button bindtap="onSubmit">上传</button>
+    </view>
+</block>
